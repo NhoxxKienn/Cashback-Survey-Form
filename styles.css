@@ -1,0 +1,86 @@
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #1D0F0F;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  header {
+    text-align: center;
+    margin: 1rem auto;
+  }
+  
+  h1, p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+    padding-bottom: 2em;
+    background-color: #453C41;
+    padding: 0.5rem 1rem;
+  }
+  
+  div {
+    margin-top: 1rem;
+  }
+  
+  label {
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2rem;
+  }
+  
+  input, textarea {
+    background-color: #1D0F0F;
+    border: 1px solid #1D0F0F;
+    color: #ffffff;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5rem 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #1D0F0F;
+    border-color: white;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    min-height: auto;
+    padding: 1px 2px;
+  }
+  
+  a {
+    color: #dfdfe2;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .capitalize {
+    text-transform: capitalize;
+  }
