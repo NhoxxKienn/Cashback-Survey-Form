@@ -1,0 +1,177 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cashback Form</title>
+    <link rel="stylesheet" href="styles.css" /> 
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Cashback Product Test</h1>
+      <p id="description">Event time: 01.01.2022 - 01.03.2022</p>
+    </header>
+    <form id="survey-form" action="">
+      <div>
+        <label id="name-label">Name: <input type="text" name="name" id="name" placeholder="Enter Your Name" class="capitalize" required /> </label>
+      </div>
+
+      <div>
+        <label id="email-label">E-Mail: <input type="email" name="email" id="email" placeholder="Enter Your E-Mail" required /> </label>
+      </div>
+
+      <div>
+        <label id="number-label">Age (Optional): <input type="number" name="age" id="number" min="10" max="99" placeholder="Age" /> </label>
+      </div>
+
+      <div>
+        <p>Gender:</p>
+        <label><input type="radio" name="gender" value="male" class= "inline" />Male</label>
+        <label><input type="radio" name="gender" value="female" class="inline" />Female</label>       
+        <label><input type="radio" name="gender" value="other" class= "inline" />Other</label>  
+        <label><input type="radio" name="gender" value="not-given" class= "inline" />Prefer not to say</label>  
+      </div>
+
+      <div>
+        <label id="iban-label">IBAN: <input type="text" name="iban" id="iban" pattern="[a-zA-Z0-9]{10,}" title="DEXXXXXXXXX" required placeholder="IBAN" class="uppercase" /> </label>
+      </div>
+
+      <div>
+        <label id="bic-label">BIC (Optional): <input type="text" name="bic" id="bic" pattern="[a-zA-Z]{9,}" placeholder="BIC" class="uppercase" /> </label>
+      </div>
+
+      <div>
+        <p>Which flavor did you buy?</p>
+        <select id="dropdown" name="flavor" required>
+          <option disabled selected value>Select product</option>
+          <option value="classic">Classic</option>
+          <option value="paprika">Paprika</option>
+          <option value="sweet-paprika">Sweet Paprika</option>
+          <option value="salt-and-vinegar">Salt & Vinegar</option>
+          <option value="bacon">Bacon</option>
+        </select>
+      </div>
+
+      <div>
+        <p>What do you like about the product? </p>
+        <label><input type="checkbox" name="like" value="taste" class= "inline" />Taste</label>
+        <label><input type="checkbox" name="like" value="texture" class= "inline" />Texture</label>
+        <label><input type="checkbox" name="like" value="price" class="inline" />Price</label>
+        <label><input type="checkbox" name="like" value="crunchiness" class="inline" />Crunchiness</label>
+      </div>
+
+      <div>
+        <p>Any comment or suggestions?</p>
+        <textarea rows="3" cols="30" id="comment" name="comment" placeholder="Enter Your Comment Here.."></textarea>
+      </div>
+
+      <div>
+        <p>Upload The Receipt: </p>
+        <label id="receipt-label">
+          <input type="file" id="receipt" name="receipt" />
+        </label>
+      </div> 
+
+      <div>
+        <label><input type="checkbox" name="terms" id="terms" value="accept" class="inline" required /> I accept the <a href="">terms and conditions</a></label>
+      </div>
+
+      <div>
+        <input type="submit" value="Submit" id="submit" name="submit" />
+      </div>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #1D0F0F;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+header {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+h1, p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: auto;
+  padding-bottom: 2em;
+  background-color: #453C41;
+  padding: 0.5rem 1rem;
+}
+
+div {
+  margin-top: 1rem;
+}
+
+label {
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2rem;
+}
+
+input, textarea {
+  background-color: #1D0F0F;
+  border: 1px solid #1D0F0F;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5rem 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #1D0F0F;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  min-height: auto;
+  padding: 1px 2px;
+}
+
+a {
+  color: #dfdfe2;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+** end of undefined **
+
